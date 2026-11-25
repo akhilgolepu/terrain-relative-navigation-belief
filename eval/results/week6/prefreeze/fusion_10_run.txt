@@ -1,0 +1,107 @@
+flight 10 drift 0.1% seed 0: fused RMSE 20.0 m, odo 66.3 m, fixes 86.7 m; NEES 5.72; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 1: fused RMSE 20.4 m, odo 73.9 m, fixes 86.7 m; NEES 5.73; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 2: fused RMSE 19.1 m, odo 76.4 m, fixes 86.7 m; NEES 4.02; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 3: fused RMSE 19.6 m, odo 69.0 m, fixes 86.7 m; NEES 5.04; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 4: fused RMSE 19.6 m, odo 66.6 m, fixes 86.7 m; NEES 4.67; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 5: fused RMSE 20.3 m, odo 75.9 m, fixes 86.7 m; NEES 5.14; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 6: fused RMSE 19.2 m, odo 66.1 m, fixes 86.7 m; NEES 4.49; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 7: fused RMSE 20.6 m, odo 74.3 m, fixes 86.7 m; NEES 5.60; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 8: fused RMSE 18.8 m, odo 70.3 m, fixes 86.7 m; NEES 4.04; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 9: fused RMSE 20.3 m, odo 62.6 m, fixes 86.7 m; NEES 6.12; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 10: fused RMSE 21.3 m, odo 76.6 m, fixes 86.7 m; NEES 6.77; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 11: fused RMSE 19.9 m, odo 75.1 m, fixes 86.7 m; NEES 4.62; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 12: fused RMSE 19.5 m, odo 73.6 m, fixes 86.7 m; NEES 4.50; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 13: fused RMSE 19.3 m, odo 71.3 m, fixes 86.7 m; NEES 4.52; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 14: fused RMSE 19.7 m, odo 71.9 m, fixes 86.7 m; NEES 5.04; fused 40/139 (gated 21)
+flight 10 drift 0.1% seed 15: fused RMSE 18.9 m, odo 72.3 m, fixes 86.7 m; NEES 4.18; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 16: fused RMSE 19.5 m, odo 69.9 m, fixes 86.7 m; NEES 4.92; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 17: fused RMSE 20.1 m, odo 68.8 m, fixes 86.7 m; NEES 5.41; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 18: fused RMSE 19.7 m, odo 72.3 m, fixes 86.7 m; NEES 5.11; fused 41/139 (gated 18)
+flight 10 drift 0.1% seed 19: fused RMSE 20.8 m, odo 68.9 m, fixes 86.7 m; NEES 6.19; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 0: fused RMSE 21.1 m, odo 97.7 m, fixes 86.7 m; NEES 2.87; fused 40/139 (gated 21)
+flight 10 drift 0.5% seed 1: fused RMSE 20.8 m, odo 83.2 m, fixes 86.7 m; NEES 2.68; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 2: fused RMSE 22.4 m, odo 99.8 m, fixes 86.7 m; NEES 3.40; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 3: fused RMSE 25.7 m, odo 71.7 m, fixes 86.7 m; NEES 4.34; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 4: fused RMSE 21.1 m, odo 73.5 m, fixes 86.7 m; NEES 2.91; fused 40/139 (gated 21)
+flight 10 drift 0.5% seed 5: fused RMSE 22.7 m, odo 69.5 m, fixes 86.7 m; NEES 3.47; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 6: fused RMSE 21.9 m, odo 101.7 m, fixes 86.7 m; NEES 3.19; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 7: fused RMSE 25.5 m, odo 33.9 m, fixes 86.7 m; NEES 4.47; fused 40/139 (gated 21)
+flight 10 drift 0.5% seed 8: fused RMSE 39.4 m, odo 119.5 m, fixes 86.7 m; NEES 7.91; fused 36/139 (gated 30)
+flight 10 drift 0.5% seed 9: fused RMSE 23.2 m, odo 65.7 m, fixes 86.7 m; NEES 3.84; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 10: fused RMSE 20.7 m, odo 81.8 m, fixes 86.7 m; NEES 2.63; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 11: fused RMSE 21.1 m, odo 55.0 m, fixes 86.7 m; NEES 3.00; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 12: fused RMSE 30.0 m, odo 107.5 m, fixes 86.7 m; NEES 5.80; fused 40/139 (gated 22)
+flight 10 drift 0.5% seed 13: fused RMSE 24.3 m, odo 62.8 m, fixes 86.7 m; NEES 3.81; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 14: fused RMSE 21.8 m, odo 94.6 m, fixes 86.7 m; NEES 2.97; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 15: fused RMSE 24.6 m, odo 97.7 m, fixes 86.7 m; NEES 3.59; fused 41/139 (gated 19)
+flight 10 drift 0.5% seed 16: fused RMSE 21.0 m, odo 67.4 m, fixes 86.7 m; NEES 2.89; fused 40/139 (gated 21)
+flight 10 drift 0.5% seed 17: fused RMSE 23.2 m, odo 54.9 m, fixes 86.7 m; NEES 3.62; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 18: fused RMSE 24.7 m, odo 75.5 m, fixes 86.7 m; NEES 4.09; fused 41/139 (gated 18)
+flight 10 drift 0.5% seed 19: fused RMSE 24.2 m, odo 53.1 m, fixes 86.7 m; NEES 4.08; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 0: fused RMSE 26.1 m, odo 78.9 m, fixes 86.7 m; NEES 2.58; fused 41/139 (gated 19)
+flight 10 drift 1.0% seed 1: fused RMSE 31.2 m, odo 125.5 m, fixes 86.7 m; NEES 3.46; fused 41/139 (gated 19)
+flight 10 drift 1.0% seed 2: fused RMSE 25.7 m, odo 54.8 m, fixes 86.7 m; NEES 2.57; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 3: fused RMSE 24.9 m, odo 155.8 m, fixes 86.7 m; NEES 2.49; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 4: fused RMSE 27.9 m, odo 59.9 m, fixes 86.7 m; NEES 2.95; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 5: fused RMSE 91.5 m, odo 148.2 m, fixes 86.7 m; NEES 16.08; fused 29/139 (gated 51)
+flight 10 drift 1.0% seed 6: fused RMSE 28.1 m, odo 88.1 m, fixes 86.7 m; NEES 2.64; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 7: fused RMSE 26.9 m, odo 136.7 m, fixes 86.7 m; NEES 2.68; fused 41/139 (gated 16)
+flight 10 drift 1.0% seed 8: fused RMSE 26.1 m, odo 120.3 m, fixes 86.7 m; NEES 2.66; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 9: fused RMSE 25.5 m, odo 75.8 m, fixes 86.7 m; NEES 2.63; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 10: fused RMSE 25.4 m, odo 63.6 m, fixes 86.7 m; NEES 2.57; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 11: fused RMSE 27.8 m, odo 97.4 m, fixes 86.7 m; NEES 2.84; fused 42/139 (gated 17)
+flight 10 drift 1.0% seed 12: fused RMSE 25.5 m, odo 65.4 m, fixes 86.7 m; NEES 2.42; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 13: fused RMSE 31.2 m, odo 79.8 m, fixes 86.7 m; NEES 3.79; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 14: fused RMSE 34.4 m, odo 86.2 m, fixes 86.7 m; NEES 3.40; fused 39/139 (gated 23)
+flight 10 drift 1.0% seed 15: fused RMSE 33.1 m, odo 71.9 m, fixes 86.7 m; NEES 3.84; fused 41/139 (gated 18)
+flight 10 drift 1.0% seed 16: fused RMSE 33.0 m, odo 97.5 m, fixes 86.7 m; NEES 3.87; fused 40/139 (gated 21)
+flight 10 drift 1.0% seed 17: fused RMSE 41.1 m, odo 103.4 m, fixes 86.7 m; NEES 4.74; fused 40/139 (gated 21)
+flight 10 drift 1.0% seed 18: fused RMSE 27.4 m, odo 194.0 m, fixes 86.7 m; NEES 2.75; fused 40/139 (gated 21)
+flight 10 drift 1.0% seed 19: fused RMSE 30.3 m, odo 78.9 m, fixes 86.7 m; NEES 3.32; fused 40/139 (gated 21)
+flight 10 drift 2.0% seed 0: fused RMSE 48.8 m, odo 131.2 m, fixes 86.7 m; NEES 3.71; fused 44/139 (gated 12)
+flight 10 drift 2.0% seed 1: fused RMSE 71.3 m, odo 306.1 m, fixes 86.7 m; NEES 5.55; fused 40/139 (gated 19)
+flight 10 drift 2.0% seed 2: fused RMSE 39.9 m, odo 76.8 m, fixes 86.7 m; NEES 2.72; fused 43/139 (gated 12)
+flight 10 drift 2.0% seed 3: fused RMSE 54.1 m, odo 87.3 m, fixes 86.7 m; NEES 3.49; fused 43/139 (gated 13)
+flight 10 drift 2.0% seed 4: fused RMSE 36.2 m, odo 79.5 m, fixes 86.7 m; NEES 2.17; fused 42/139 (gated 17)
+flight 10 drift 2.0% seed 5: fused RMSE 36.0 m, odo 95.0 m, fixes 86.7 m; NEES 2.38; fused 43/139 (gated 11)
+flight 10 drift 2.0% seed 6: fused RMSE 45.0 m, odo 257.7 m, fixes 86.7 m; NEES 2.87; fused 43/139 (gated 14)
+flight 10 drift 2.0% seed 7: fused RMSE 33.2 m, odo 75.9 m, fixes 86.7 m; NEES 2.04; fused 43/139 (gated 14)
+flight 10 drift 2.0% seed 8: fused RMSE 32.0 m, odo 179.2 m, fixes 86.7 m; NEES 1.62; fused 42/139 (gated 14)
+flight 10 drift 2.0% seed 9: fused RMSE 63.9 m, odo 99.3 m, fixes 86.7 m; NEES 4.52; fused 42/139 (gated 17)
+flight 10 drift 2.0% seed 10: fused RMSE 39.1 m, odo 153.3 m, fixes 86.7 m; NEES 2.34; fused 42/139 (gated 14)
+flight 10 drift 2.0% seed 11: fused RMSE 47.8 m, odo 82.4 m, fixes 86.7 m; NEES 3.30; fused 42/139 (gated 15)
+flight 10 drift 2.0% seed 12: fused RMSE 72.4 m, odo 147.1 m, fixes 86.7 m; NEES 6.39; fused 38/139 (gated 22)
+flight 10 drift 2.0% seed 13: fused RMSE 44.0 m, odo 276.8 m, fixes 86.7 m; NEES 2.36; fused 42/139 (gated 18)
+flight 10 drift 2.0% seed 14: fused RMSE 71.8 m, odo 94.0 m, fixes 86.7 m; NEES 4.53; fused 39/139 (gated 23)
+flight 10 drift 2.0% seed 15: fused RMSE 43.1 m, odo 119.1 m, fixes 86.7 m; NEES 3.08; fused 43/139 (gated 11)
+flight 10 drift 2.0% seed 16: fused RMSE 41.6 m, odo 116.8 m, fixes 86.7 m; NEES 2.46; fused 44/139 (gated 11)
+flight 10 drift 2.0% seed 17: fused RMSE 34.9 m, odo 114.7 m, fixes 86.7 m; NEES 2.22; fused 43/139 (gated 13)
+flight 10 drift 2.0% seed 18: fused RMSE 35.1 m, odo 219.3 m, fixes 86.7 m; NEES 2.09; fused 42/139 (gated 13)
+flight 10 drift 2.0% seed 19: fused RMSE 41.1 m, odo 136.4 m, fixes 86.7 m; NEES 2.08; fused 43/139 (gated 13)
+## Flight 10: fused vs odometry-only vs fixes-only (mean over seeds [p5, p95])
+
+| Drift | Fused ATE RMSE | Fused median | Odometry-only RMSE (from prior) | Odometry-only RMSE from TRUE start (oracle) | Fixes-only RMSE / median | Fused NEES (2 = consistent) | Fused cov 95 % | Odo cov 95 % | Published share | Published median | Published cov 95 % | Fixes fused / gated / thinned (of candidates) | Outlier share | Per-frame latency ms (median / p95: odometry + fix + belief) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0.1 % | 19.8 [18.9, 20.8] | 10.2 [8.4, 11.9] | 71.1 [65.9, 76.4] | 6.2 [3.0, 11.0] | 86.7 / 30.1 | 5.09 [4.04, 6.22] | 0.79 [0.64, 0.87] | 1.00 [1.00, 1.00] | 1.00 | 10.2 [8.4, 11.9] | 0.79 [0.64, 0.87] | 40 / 20 / 79 (139) | 0.07 | 0.24 / 1.49 |
+| 0.5 % | 24.0 [20.8, 30.5] | 15.9 [12.3, 22.5] | 78.3 [52.2, 108.1] | 32.3 [17.8, 52.4] | 86.7 / 30.1 | 3.78 [2.67, 5.90] | 0.81 [0.64, 0.90] | 0.99 [0.99, 1.00] | 1.00 | 15.9 [12.3, 22.5] | 0.81 [0.64, 0.90] | 40 / 19 / 79 (139) | 0.05 | 0.23 / 1.45 |
+| 1.0 % | 32.1 [25.3, 43.6] | 22.4 [18.3, 27.6] | 99.1 [59.6, 157.7] | 61.7 [26.5, 109.2] | 86.7 / 30.1 | 3.71 [2.48, 5.31] | 0.84 [0.72, 0.91] | 0.94 [0.61, 1.00] | 1.00 | 22.4 [18.3, 27.6] | 0.84 [0.72, 0.91] | 40 / 20 / 78 (139) | 0.06 | 0.23 / 0.92 |
+| 2.0 % | 46.6 [33.2, 71.9] | 33.3 [26.3, 44.3] | 142.4 [76.8, 278.2] | 133.2 [56.5, 218.7] | 86.7 / 30.1 | 3.10 [2.02, 5.59] | 0.88 [0.69, 0.97] | 0.93 [0.57, 1.00] | 1.00 | 33.3 [26.3, 44.3] | 0.88 [0.69, 0.97] | 42 / 15 / 82 (139) | 0.15 | 0.23 / 0.62 |
+
+State shares (mean over seeds):
+
+| Drift | STRONG | AGING | UNCERTAIN | DO_NOT_PUBLISH |
+|---|---|---|---|---|
+| 0.1 % | 0.27 | 0.02 | 0.71 | 0.00 |
+| 0.5 % | 0.27 | 0.02 | 0.71 | 0.00 |
+| 1.0 % | 0.27 | 0.03 | 0.70 | 0.00 |
+| 2.0 % | 0.23 | 0.23 | 0.54 | 0.00 |
+
+144 frames; ATE over all frames. Errors are against dataset labels and include label registration error; odometry is SYNTHETIC (label path + sampled drift).
+
+### Fix outage: fixes stop at frame 43 (t = 200 s), seed 0
+
+- 1.0 % drift: first AGING at t = 286.0 s, first DO_NOT_PUBLISH at t = None s; at the end error 46 m, 1-sigma 60 m; error inside the 2-sigma band on 100% of the outage frames.
+- 2.0 % drift: first AGING at t = 200.0 s, first DO_NOT_PUBLISH at t = 550.0 s; at the end error 199 m, 1-sigma 118 m; error inside the 2-sigma band on 78% of the outage frames.
+
+Errors are against dataset labels and include label registration error; odometry is SYNTHETIC (label path + sampled drift).
+

@@ -1,0 +1,3 @@
+flight,heading_bin_deg,n,median_heading_deg,offset_e_m,mad_e_m,offset_n_m,mad_n_m,matcher_rot_deg,phi1_minus_phi2_deg,note
+10,90-180,20,157.4,-8.6,5.0,-17.8,6.3,10.6,9.3,diagnostic only; never applied
+10,270-360,24,337.1,-6.8,5.3,22.6,4.2,-4.5,-14.5,diagnostic only; never applied

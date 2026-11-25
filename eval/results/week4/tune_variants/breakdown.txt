@@ -1,0 +1,70 @@
+== gradient_c64/frames_ncc.csv: 131/144 fixes
+  of fixes: within 15 m 0.031, 30 m 0.260, 50 m 0.366; median 75.8 m
+  ratio >= p50 (1.071): n=66 median 58.6 m, within 50 m 0.47
+  ratio >= p75 (1.148): n=33 median 30.3 m, within 50 m 0.61
+  ratio >= p90 (1.256): n=14 median 28.4 m, within 50 m 0.64
+  rotation: |rot| > 5 deg 0.00; at rotation edge 0.45; at scale edge 0.55
+  fixes within 50 m (n=48): rotation p5/p50/p95 [-5.0, -1.5, 5.0], scale p10/p50/p90 [0.812, 0.9, 1.129]
+  blank-patch frames (< 90 % imagery): 27; fixes 24, median 82.1 m
+== intensity_c64/frames_ncc.csv: 135/144 fixes
+  of fixes: within 15 m 0.059, 30 m 0.207, 50 m 0.333; median 106.3 m
+  ratio >= p50 (1.070): n=68 median 89.6 m, within 50 m 0.38
+  ratio >= p75 (1.117): n=34 median 35.2 m, within 50 m 0.59
+  ratio >= p90 (1.254): n=14 median 26.4 m, within 50 m 0.93
+  rotation: |rot| > 5 deg 0.00; at rotation edge 0.43; at scale edge 0.57
+  fixes within 50 m (n=45): rotation p5/p50/p95 [-5.0, -1.5, 5.0], scale p10/p50/p90 [0.8, 0.862, 1.12]
+  blank-patch frames (< 90 % imagery): 27; fixes 25, median 134.2 m
+== z_gradient_c64/frames_ncc.csv: 136/144 fixes
+  of fixes: within 15 m 0.074, 30 m 0.309, 50 m 0.426; median 68.9 m
+  ratio >= p50 (1.088): n=68 median 29.7 m, within 50 m 0.63
+  ratio >= p75 (1.185): n=34 median 25.4 m, within 50 m 0.82
+  ratio >= p90 (1.373): n=14 median 19.5 m, within 50 m 1.00
+  rotation: |rot| > 5 deg 0.00; at rotation edge 0.41; at scale edge 0.27
+  fixes within 50 m (n=58): rotation p5/p50/p95 [-5.0, -1.5, 5.0], scale p10/p50/p90 [0.925, 1.106, 1.233]
+  blank-patch frames (< 90 % imagery): 27; fixes 22, median 66.5 m
+  rejected: 8; candidate within 50 m: 0 (median ratio nan), beyond: 8 (median ratio 1.034)
+== z_intensity_c64/frames_ncc.csv: 141/144 fixes
+  of fixes: within 15 m 0.085, 30 m 0.340, 50 m 0.475; median 53.2 m
+  ratio >= p50 (1.071): n=71 median 30.3 m, within 50 m 0.61
+  ratio >= p75 (1.175): n=36 median 25.3 m, within 50 m 0.83
+  ratio >= p90 (1.324): n=15 median 25.5 m, within 50 m 1.00
+  rotation: |rot| > 5 deg 0.00; at rotation edge 0.48; at scale edge 0.21
+  fixes within 50 m (n=67): rotation p5/p50/p95 [-5.0, 0.0, 5.0], scale p10/p50/p90 [0.9, 1.1, 1.225]
+  blank-patch frames (< 90 % imagery): 27; fixes 26, median 82.8 m
+  rejected: 3; candidate within 50 m: 0 (median ratio nan), beyond: 3 (median ratio 1.274)
+== z_intensity_c64_rot20/frames_ncc.csv: 141/144 fixes
+  of fixes: within 15 m 0.113, 30 m 0.461, 50 m 0.589; median 30.7 m
+  ratio >= p50 (1.088): n=71 median 26.0 m, within 50 m 0.83
+  ratio >= p75 (1.234): n=36 median 22.7 m, within 50 m 1.00
+  ratio >= p90 (1.598): n=15 median 23.2 m, within 50 m 1.00
+  rotation: |rot| > 5 deg 0.63; at rotation edge 0.00; at scale edge 0.15
+  fixes within 50 m (n=83): rotation p5/p50/p95 [-14.4, 0.0, 12.8], scale p10/p50/p90 [1.022, 1.112, 1.188]
+  blank-patch frames (< 90 % imagery): 32; fixes 31, median 39.4 m
+  rejected: 3; candidate within 50 m: 0 (median ratio nan), beyond: 3 (median ratio 1.141)
+== z_intensity_c48_rot20/frames_ncc.csv: 139/144 fixes
+  of fixes: within 15 m 0.079, 30 m 0.417, 50 m 0.540; median 36.3 m
+  ratio >= p50 (1.087): n=70 median 26.7 m, within 50 m 0.76
+  ratio >= p75 (1.212): n=35 median 23.2 m, within 50 m 0.97
+  ratio >= p90 (1.551): n=14 median 24.3 m, within 50 m 1.00
+  rotation: |rot| > 5 deg 0.63; at rotation edge 0.00; at scale edge 0.17
+  fixes within 50 m (n=75): rotation p5/p50/p95 [-13.1, 0.0, 12.6], scale p10/p50/p90 [1.017, 1.112, 1.175]
+  blank-patch frames (< 90 % imagery): 32; fixes 31, median 73.5 m
+  rejected: 5; candidate within 50 m: 0 (median ratio nan), beyond: 5 (median ratio 1.071)
+== z_intensity_c96_rot20/frames_ncc.csv: 139/144 fixes
+  of fixes: within 15 m 0.122, 30 m 0.496, 50 m 0.647; median 30.1 m
+  ratio >= p50 (1.101): n=70 median 25.4 m, within 50 m 0.83
+  ratio >= p75 (1.267): n=35 median 23.2 m, within 50 m 1.00
+  ratio >= p90 (1.649): n=14 median 23.0 m, within 50 m 1.00
+  rotation: |rot| > 5 deg 0.61; at rotation edge 0.00; at scale edge 0.13
+  fixes within 50 m (n=90): rotation p5/p50/p95 [-14.5, -1.5, 12.6], scale p10/p50/p90 [1.009, 1.112, 1.215]
+  blank-patch frames (< 90 % imagery): 32; fixes 30, median 36.7 m
+  rejected: 5; candidate within 50 m: 0 (median ratio nan), beyond: 5 (median ratio 1.136)
+== tune/frames_ncc.csv: 44/144 fixes
+  of fixes: within 15 m 0.114, 30 m 0.841, 50 m 1.000; median 23.2 m
+  ratio >= p50 (1.445): n=22 median 23.0 m, within 50 m 1.00
+  ratio >= p75 (1.819): n=11 median 23.2 m, within 50 m 1.00
+  ratio >= p90 (2.220): n=5 median 22.8 m, within 50 m 1.00
+  rotation: |rot| > 5 deg 0.64; at rotation edge 0.00; at scale edge 0.00
+  fixes within 50 m (n=44): rotation p5/p50/p95 [-8.5, -0.8, 13.2], scale p10/p50/p90 [1.075, 1.1, 1.125]
+  blank-patch frames (< 90 % imagery): 32; fixes 11, median 23.2 m
+  rejected: 100; candidate within 50 m: 46 (median ratio 1.058), beyond: 54 (median ratio 1.061)

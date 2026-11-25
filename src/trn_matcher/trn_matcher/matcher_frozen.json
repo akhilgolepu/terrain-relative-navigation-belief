@@ -1,0 +1,22 @@
+{
+  "frozen": "2026-11-19, before any run on the calibrate or test split",
+  "settings": {
+    "feature": "intensity",
+    "coarse_px": 96,
+    "peak_min": 0.2,
+    "ratio_min": 1.2
+  },
+  "search_space": {
+    "window_m": 150.0,
+    "scale_range": [0.8, 1.3],
+    "rot_range_deg": [-20.0, 20.0]
+  },
+  "how_chosen": {
+    "feature": "tried once on tune (accept-all, coarse 64, rotation +-5): intensity 47.5 % of fixes within 50 m, median 53.2 m; gradient 42.6 %, 68.9 m",
+    "coarse_px": "tried 48 / 64 / 96 on tune (intensity, rotation +-20, accept-all): within 50 m 54.0 / 58.9 / 64.7 % of fixes; 96 largest tried (runtime ~8 s per frame)",
+    "peak_min, ratio_min": "eval/tune_thresholds.py rule on tune: most frames accepted with <= 5 % wrong (> 50 m) among accepted and >= 20 accepted; grid peak 0..0.5, ratio 1.0..2.0; chosen 0.2 / 1.2 (44/144 accepted, 0 wrong); peak_min does not change the accepted set on tune",
+    "rot_range_deg": "widened from +-5 after the one +-20 sweep on tune (63 % of fixes needed |rot| > 5)"
+  },
+  "data": "tune split only (flight 10, 144 frames); label offset never used",
+  "log": "docs/log.md, week 4"
+}

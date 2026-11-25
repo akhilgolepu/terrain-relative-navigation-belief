@@ -1,0 +1,56 @@
+{
+  "alignment_ate_rpe": "SE(3) Umeyama, all matched poses, no scale",
+  "drift_curve_alignment": {
+    "method": "4dof_yaw_translation",
+    "window_m": 5.0,
+    "skip_start_s": 0.0,
+    "skip_start_meaning": "alignment window starts at the first matched pose at or after the first estimated pose + skip_start_s; error rows still cover all poses, distance from the first matched pose",
+    "window_unit": "metres travelled along ground truth",
+    "error_split": "horizontal = norm of (x,y) error; vertical = signed z error (est - gt)",
+    "comparison_curves": "horizontal error with SE(3) alignment over all poses (cross-check), and with 4-DoF over all poses",
+    "tilt_check": "roll/pitch (ZYX Euler, degrees) of the SE(3) rotation applied to the estimate",
+    "assumption": "z axis along gravity in estimate and ground truth"
+  },
+  "rpe_skip_start_s": 0.0,
+  "rpe_deltas_m": [
+    1.0,
+    10.0,
+    50.0
+  ],
+  "rpe_curve_deltas_m": [
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0,
+    50.0
+  ],
+  "rpe_segments": "evo RPE translation_part, consecutive non-overlapping segments, length measured along the estimate's path (pairs_from_reference=False), after SE(3) alignment",
+  "max_time_diff_s": 0.01,
+  "inputs": {
+    "room1_run1": {
+      "estimate": "eval/results/vio/room1_run1_openvins.tum",
+      "ground_truth": "/home/akhil/ws_deps/src/open_vins/ov_data/tum_vi/dataset-room1_512_16.txt"
+    },
+    "room1_run2": {
+      "estimate": "eval/results/vio/room1_run2_openvins.tum",
+      "ground_truth": "/home/akhil/ws_deps/src/open_vins/ov_data/tum_vi/dataset-room1_512_16.txt"
+    },
+    "room1_run3": {
+      "estimate": "eval/results/vio/room1_run3_openvins.tum",
+      "ground_truth": "/home/akhil/ws_deps/src/open_vins/ov_data/tum_vi/dataset-room1_512_16.txt"
+    },
+    "room2_run1": {
+      "estimate": "eval/results/vio/room2_run1_openvins.tum",
+      "ground_truth": "/home/akhil/ws_deps/src/open_vins/ov_data/tum_vi/dataset-room2_512_16.txt"
+    },
+    "room2_run2": {
+      "estimate": "eval/results/vio/room2_run2_openvins.tum",
+      "ground_truth": "/home/akhil/ws_deps/src/open_vins/ov_data/tum_vi/dataset-room2_512_16.txt"
+    },
+    "room2_run3": {
+      "estimate": "eval/results/vio/room2_run3_openvins.tum",
+      "ground_truth": "/home/akhil/ws_deps/src/open_vins/ov_data/tum_vi/dataset-room2_512_16.txt"
+    }
+  }
+}

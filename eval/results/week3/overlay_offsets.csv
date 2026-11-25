@@ -1,0 +1,27 @@
+level,flight,overlay,landmark,east_m,north_m,offset_m,n,quality,note,east_range_m,north_range_m,mean_abs_offset_m,max_abs_offset_m
+landmark,05,overlay_05_05_0119.png,orange dirt track elbow (upper right),-11.0,-8.8,14.1,1,weak,village; roofs changed between map and flight; road angle differs by a few degrees,,,,
+landmark,05,overlay_05_05_0119.png,NE corner of large blue-roof building (left),-8.8,4.4,9.9,1,weak,building match uncertain,,,,
+overlay,05,overlay_05_05_0237.png,none found,,,,0,,forest; no feature matched; map shows a bare patch at the bottom that the image does not,,,,
+landmark,05,overlay_05_05_0355.png,white end building of lower greenhouse,-9.3,11.5,14.8,1,good,beside the road in both,,,,
+landmark,05,overlay_05_05_0355.png,SE corner of upper greenhouse at the road,-11.0,3.5,11.6,1,fair,position along the road uncertain,,,,
+overlay,10,overlay_10_10_0029.png,none found,,,,0,,map is hazy winter imagery with a different field layout; no feature matched,,,,
+landmark,10,overlay_10_10_0058.png,corner where the paved road turns west,-7.1,10.5,12.7,1,fair,road unpaved track on the map,,,,
+landmark,10,overlay_10_10_0058.png,ditch meets road,-10.2,13.6,17.0,1,fair,ditch angle differs by a few degrees,,,,
+landmark,10,overlay_10_10_0058.png,NW corner of dark tree strip,-4.6,21.6,22.1,1,weak,,,,,
+landmark,10,overlay_10_10_0087.png,NW corner of light field,1.5,8.7,8.8,1,weak,only one feature; field edges at a different angle on the map,,,,
+landmark,10,overlay_10_10_0116.png,single tree west of the road,-9.3,-11.1,14.5,1,fair,road runs a few degrees off north on the map but N-S in the image,,,,
+landmark,10,overlay_10_10_0116.png,east edge of tree block beside the road,-15.4,-14.5,21.2,1,fair,,,,,
+overlay,11,overlay_11_11_0148.png,none found,,,,0,,hills; map has a seam between two source images; pit clusters and tracks do not match consistently,,,,
+landmark,11,overlay_11_11_0296.png,small building north of the fields,2.5,-20.6,20.7,1,weak,only one point feature; crop plots changed between map and flight,,,,
+landmark,11,overlay_11_11_0443.png,NE end of paved side road,8.2,-42.8,43.6,1,fair,,,,,
+landmark,11,overlay_11_11_0443.png,intersection of side-road line and highway centreline (from two lines),19.8,-32.1,37.7,1,fair,,,,,
+overlay,05,overlay_05_05_0119.png,mean,-9.9,-2.2,10.2,2,,,2.2,13.3,,
+overlay,05,overlay_05_05_0355.png,mean,-10.2,7.5,12.6,2,,,1.8,8.0,,
+overlay,10,overlay_10_10_0058.png,mean,-7.3,15.2,16.9,3,,,5.6,11.1,,
+overlay,10,overlay_10_10_0087.png,mean,1.5,8.7,8.8,1,,,0.0,0.0,,
+overlay,10,overlay_10_10_0116.png,mean,-12.4,-12.8,17.8,2,,,6.2,3.4,,
+overlay,11,overlay_11_11_0296.png,mean,2.5,-20.6,20.7,1,,,0.0,0.0,,
+overlay,11,overlay_11_11_0443.png,mean,14.0,-37.5,40.0,2,,,11.5,10.7,,
+flight,05,,mean of overlays,-10.0,2.7,10.4,2,,,,,11.4,12.6
+flight,10,,mean of overlays,-6.0,3.7,7.1,3,,,,,14.5,17.8
+flight,11,,mean of overlays,8.2,-29.0,30.2,2,,,,,30.4,40.0

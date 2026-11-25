@@ -1,0 +1,2 @@
+split,flight,method,n_frames,n_used,max_err_m,median_e_m,median_n_m,median_offset_m,p10_e_m,p90_e_m,p10_n_m,p90_n_m,mad_e_m,mad_n_m,median_err_m,note
+tune,10,ncc,144,90,50.0,-7.49,2.97,8.06,-17.28,7.85,-24.32,27.44,6.57,19.31,23.25,"diagnostic only: never applied to scores, labels or matcher output"

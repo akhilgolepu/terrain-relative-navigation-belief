@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Local pre-commit hook: ament flake8 + pep257 on every ROS package (src/*) with staged .py files.
+# Install: cp tools/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+set -u
+pkgs=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^src/[^/]+/.*\.py$' | cut -d/ -f2 | sort -u)
+[ -z "$pkgs" ] && exit 0
+set +u
+source /opt/ros/jazzy/setup.bash >/dev/null 2>&1 || { echo "pre-commit: cannot source ROS"; exit 1; }
+set -u
+fail=0
+for p in $pkgs; do
+  out=$(cd "src/$p" && { ament_flake8 . 2>&1; ament_pep257 . 2>&1; } | grep -E '^\./')
+  if [ -n "$out" ]; then
+    echo "pre-commit: lint errors in src/$p:"; echo "$out"; fail=1
+  fi
+done
+# trn_fusion's tests need gtsam, which only the venv has: run them there when trn_fusion changes
+if echo "$pkgs" | grep -qx trn_fusion; then
+  if ! (cd src/trn_fusion && env -u PYTHONPATH PYTHONPATH=. "$HOME/venvs/trn/bin/python" -m pytest -q test/test_fusion.py >/tmp/pre-commit-fusion.log 2>&1); then
+    echo "pre-commit: trn_fusion tests failed (venv):"; tail -15 /tmp/pre-commit-fusion.log; fail=1
+  fi
+fi
+[ $fail -eq 0 ] || { echo "pre-commit: commit blocked (fix the errors above)"; exit 1; }
+exit 0

@@ -1,0 +1,7 @@
+run,camera_frames_in_bag,openvins_updates,poses_output,max_imu_cam_gap_data_time_s,updates_slower_than_20hz,problem_lines_openvins,problem_lines_play,problem_lines_record,play_wall_s,play_end,recorder_end,openvins_end,leftover_openvins_processes
+room1_run1,2821,2808,2689,0.4660,0,0,0,0,141.6,exited by itself,exited after SIGINT,exited after SIGINT,0
+room1_run2,2821,2815,2689,0.4649,0,0,0,0,141.6,exited by itself,exited after SIGINT,exited after SIGINT,0
+room1_run3,2821,2815,2689,0.4649,0,0,0,0,141.6,exited by itself,exited after SIGINT,exited after SIGINT,0
+room2_run1,2882,2882,2778,0.0159,0,0,0,0,144.7,exited by itself,exited after SIGINT,exited after SIGINT,0
+room2_run2,2882,2876,2778,0.0647,0,0,0,0,144.6,exited by itself,exited after SIGINT,exited after SIGINT,0
+room2_run3,2882,2882,2778,0.0639,0,0,0,0,144.6,exited by itself,exited after SIGINT,exited after SIGINT,0

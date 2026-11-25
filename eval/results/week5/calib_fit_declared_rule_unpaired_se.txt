@@ -1,0 +1,19 @@
+M0 const         lam    1: CV NLL 9.693 +- 0.207, AUC 0.334, ECE 0.079, coverage 50/90/95 0.50/0.89/0.94, max KS 0.00
+M1 ratio         lam    1: CV NLL 9.538 +- 0.171, AUC 0.757, ECE 0.062, coverage 50/90/95 0.50/0.90/0.96, max KS 0.54
+M1 ratio         lam   10: CV NLL 9.586 +- 0.183, AUC 0.790, ECE 0.079, coverage 50/90/95 0.51/0.92/0.97, max KS 0.54
+M2 robust        lam    1: CV NLL 9.580 +- 0.176, AUC 0.728, ECE 0.058, coverage 50/90/95 0.51/0.90/0.96, max KS 0.21
+M2 robust        lam   10: CV NLL 9.621 +- 0.190, AUC 0.740, ECE 0.053, coverage 50/90/95 0.51/0.90/0.96, max KS 0.21
+M3 ratio+gap     lam    1: CV NLL 9.535 +- 0.168, AUC 0.734, ECE 0.061, coverage 50/90/95 0.51/0.90/0.96, max KS 0.54
+M3 ratio+gap     lam   10: CV NLL 9.562 +- 0.176, AUC 0.790, ECE 0.068, coverage 50/90/95 0.51/0.90/0.97, max KS 0.54
+M4 robust+cover  lam    1: CV NLL 9.672 +- 0.174, AUC 0.694, ECE 0.062, coverage 50/90/95 0.53/0.90/0.96, max KS 0.28
+M4 robust+cover  lam   10: CV NLL 9.684 +- 0.184, AUC 0.695, ECE 0.042, coverage 50/90/95 0.53/0.91/0.96, max KS 0.28
+M5 ratio+all     lam    1: CV NLL 9.593 +- 0.159, AUC 0.733, ECE 0.061, coverage 50/90/95 0.53/0.91/0.96, max KS 0.54
+M5 ratio+all     lam   10: CV NLL 9.610 +- 0.168, AUC 0.744, ECE 0.028, coverage 50/90/95 0.52/0.91/0.97, max KS 0.54
+M6 peak+robust   lam    1: CV NLL 9.648 +- 0.168, AUC 0.727, ECE 0.056, coverage 50/90/95 0.53/0.90/0.95, max KS 0.28
+M6 peak+robust   lam   10: CV NLL 9.658 +- 0.178, AUC 0.724, ECE 0.035, coverage 50/90/95 0.52/0.92/0.97, max KS 0.28
+
+best CV NLL: M3 ratio+gap lam 1 (9.535 +- 0.168); eligible within 1 SE: [('M0 const', 1.0), ('M1 ratio', 1.0), ('M1 ratio', 10.0), ('M2 robust', 1.0), ('M2 robust', 10.0), ('M3 ratio+gap', 1.0), ('M3 ratio+gap', 10.0), ('M4 robust+cover', 1.0), ('M4 robust+cover', 10.0), ('M5 ratio+all', 1.0), ('M5 ratio+all', 10.0), ('M6 peak+robust', 1.0), ('M6 peak+robust', 10.0)]
+chosen: M0 const lam 1 
+validity thresholds (05 out-of-fold): {'t_strong': None, 't_strong_accepted_frac_05': 0.0, 't_strong_wrong_rate_05': None, 't_publish': None, 't_publish_accepted_frac_05': 0.0, 't_publish_wrong_rate_05': None}
+CV NLL difference chosen - const: +0.000 (block-bootstrap 95 % CI +0.000..+0.000); n = 473, n_eff wrong 100, nll 86
+wrote /home/akhil/trn-belief/src/trn_calibration/trn_calibration/calibration_frozen.json, /home/akhil/trn-belief/eval/results/week5/cv_models.csv, /home/akhil/trn-belief/eval/results/week5/oof_05.csv

@@ -1,0 +1,25 @@
+sequence,metric,mean,std,min,max,n_distinct_outcomes,outcomes
+room1,ate_rmse_m,0.0647,0.0018,0.0634,0.0660,2,room1_A room1_B
+room1,rpe_trans_rmse_1m,0.0126,0.0008,0.0121,0.0132,2,room1_A room1_B
+room1,rpe_trans_median_1m,0.0103,0.0004,0.0100,0.0105,2,room1_A room1_B
+room1,rpe_trans_rmse_10m,0.0324,0.0008,0.0319,0.0330,2,room1_A room1_B
+room1,rpe_trans_median_10m,0.0311,0.0012,0.0302,0.0319,2,room1_A room1_B
+room1,se3_align_roll_deg,-0.1447,0.0194,-0.1584,-0.1310,2,room1_A room1_B
+room1,se3_align_pitch_deg,0.4506,0.0269,0.4316,0.4696,2,room1_A room1_B
+room1,se3_align_tilt_deg,0.4737,0.0197,0.4597,0.4876,2,room1_A room1_B
+room1,final_horiz_err_start_aligned_m,0.0982,0.0215,0.0830,0.1134,2,room1_A room1_B
+room1,final_vert_err_start_aligned_m,0.1320,0.0302,0.1106,0.1533,2,room1_A room1_B
+room1,horiz_rmse_start_aligned_m,0.0736,0.0289,0.0531,0.0940,2,room1_A room1_B
+room1,vert_rmse_start_aligned_m,0.0747,0.0153,0.0639,0.0856,2,room1_A room1_B
+room2,ate_rmse_m,0.0822,0.0095,0.0755,0.0890,2,room2_A room2_B
+room2,rpe_trans_rmse_1m,0.0152,0.0008,0.0147,0.0158,2,room2_A room2_B
+room2,rpe_trans_median_1m,0.0106,0.0008,0.0101,0.0112,2,room2_A room2_B
+room2,rpe_trans_rmse_10m,0.0335,0.0013,0.0326,0.0345,2,room2_A room2_B
+room2,rpe_trans_median_10m,0.0302,0.0025,0.0284,0.0320,2,room2_A room2_B
+room2,se3_align_roll_deg,-0.0515,0.1269,-0.1412,0.0382,2,room2_A room2_B
+room2,se3_align_pitch_deg,0.0072,0.1606,-0.1063,0.1208,2,room2_A room2_B
+room2,se3_align_tilt_deg,0.1494,0.0515,0.1130,0.1858,2,room2_A room2_B
+room2,final_horiz_err_start_aligned_m,0.1183,0.0741,0.0659,0.1707,2,room2_A room2_B
+room2,final_vert_err_start_aligned_m,0.0158,0.0407,-0.0130,0.0446,2,room2_A room2_B
+room2,horiz_rmse_start_aligned_m,0.1346,0.0322,0.1118,0.1574,2,room2_A room2_B
+room2,vert_rmse_start_aligned_m,0.0238,0.0104,0.0165,0.0312,2,room2_A room2_B

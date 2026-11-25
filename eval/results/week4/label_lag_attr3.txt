@@ -1,0 +1,19 @@
+tune flight 10 (attr3 times): n=39 accepted fixes, speed 20.1 m/s (CV 0.05)
+  lag model   along = speed x lag: lag -0.92 +- 0.08 s, residual RMS 10.2 m, MAD 6.9 m
+  const model along = c: c -18.2 m, residual RMS 10.6 m
+  both        c +81.8 m + speed x -4.99 s, RMS 9.5 m
+  cross-track mean -7.3 m (MAD 6.8)
+  2-D model  shift east +7.7 north -1.6 m + speed x lag -0.89 +- 0.08 s along track; residual |r| RMS 14.5 m, median 10.6 m
+  error vs label: raw median 24.5 m, p95 33.1 m | DIAGNOSTIC lag-corrected (own lag, in-sample): median 13.5 m, p95 25.9 m | DIAGNOSTIC with lag of 05: median 19.6 m
+calibrate flight 05 (attr3 times): n=339 accepted fixes, speed 23.4 m/s (CV 0.15)
+  lag model   along = speed x lag: lag -0.32 +- 0.06 s, residual RMS 25.2 m, MAD 14.8 m
+  const model along = c: c -8.7 m, residual RMS 24.9 m
+  both        c -52.6 m + speed x +1.87 s, RMS 24.0 m
+  cross-track mean -2.6 m (MAD 11.5)
+  2-D model  shift east +4.3 north +1.2 m + speed x lag -0.35 +- 0.05 s along track; residual |r| RMS 31.4 m, median 23.0 m
+  error vs label: raw median 25.3 m, p95 57.4 m | DIAGNOSTIC lag-corrected (own lag, in-sample): median 23.5 m, p95 58.1 m | DIAGNOSTIC with lag of 10: median 24.5 m
+lag difference -0.60 s, combined SE 0.10 s -> 5.9 SE apart (NOT consistent at 2 SE)
+constant along-track offsets: -18.2 m vs -8.7 m (difference -9.5 m)
+2-D model lags: -0.89 vs -0.35 s, difference -0.54 s = 5.4 combined SE (NOT consistent at 2 SE)
+diagnostic only: never applied to scores
+wrote /home/akhil/trn-belief/eval/results/week4/label_lag_attr3.csv

@@ -1,0 +1,11 @@
+{
+  "set": "2026-11-21 by Akhil, after week 5 review",
+  "quantity": "P(wrong) = P(|fix - label| > 50 m) from the frozen 'selected' model in calibration_frozen.json",
+  "STRONG": "P(wrong) <= 0.15",
+  "UNCERTAIN": "0.15 < P(wrong) <= 0.389",
+  "DO_NOT_PUBLISH": "P(wrong) > 0.389, or no candidate",
+  "strong_max_p_wrong": 0.15,
+  "publish_max_p_wrong": 0.389,
+  "provenance": "0.389 = t_publish of the frozen week 5 rule (from flight 05 out-of-fold, <= 10 % wrong). The STRONG cut 0.15 was chosen AFTER the flight 10 risk-coverage curve and threshold table had been seen (week 5 report), so flight 10 is no longer a clean check of it; flight 11 (test) is. Cuts are not moved after seeing results.",
+  "note": "errors are against dataset labels: P(wrong) includes label registration error"
+}

@@ -1,0 +1,37 @@
+{
+  "command": "eval/eval_matcher.py --split calibrate --matcher trn_matcher.matcher:FeatureMatcher --workers 14",
+  "git_commit": "1c60560",
+  "date": "2026-11-20T09:37:35",
+  "split": "calibrate",
+  "flights": [
+    "05"
+  ],
+  "n_frames": 473,
+  "every": 1,
+  "seed": 0,
+  "prior_sigma_m": 50.0,
+  "image_px": 1024,
+  "map_m_per_px": 0.5,
+  "search": {
+    "window_m": 150.0,
+    "scale_range": [
+      0.8,
+      1.3
+    ],
+    "rot_range_deg": [
+      -20.0,
+      20.0
+    ]
+  },
+  "labels": "dataset UAV-coordinates.csv positions; label registration error ~10-40 m (week 3)",
+  "rotation_prior": "none",
+  "workers": 14,
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "opencv": "4.6.0",
+    "scipy": "1.11.4"
+  },
+  "method": "prior",
+  "settings": {}
+}

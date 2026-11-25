@@ -1,0 +1,10 @@
+split,flight,subset,method,role,n_frames,n_fix,no_fix_rate,acceptance,median_m,p95_m,within_15m_rate,within_15m_of_fixes,wrong_over_50m_rate,wrong_over_50m_of_fixes,floor_prior_median_m,floor_random_median_m
+tune,10,all frames,prior,floor,144,144,0.0,1.0,62.0,116.6,0.028,0.028,0.625,0.625,62.0,134.4
+tune,10,all frames,random,floor,144,144,0.0,1.0,134.4,231.3,0.007,0.007,0.917,0.917,62.0,134.4
+tune,10,all frames,ncc,matcher,144,44,0.694,0.306,23.2,32.4,0.035,0.114,0.0,0.0,62.0,134.4
+tune,10,map imagery < 90% of patch,prior,floor,32,32,0.0,1.0,63.0,113.5,0.0,0.0,0.719,0.719,63.0,141.2
+tune,10,map imagery < 90% of patch,random,floor,32,32,0.0,1.0,141.2,243.4,0.0,0.0,0.938,0.938,63.0,141.2
+tune,10,map imagery < 90% of patch,ncc,matcher,32,11,0.656,0.344,23.2,31.9,0.0,0.0,0.0,0.0,63.0,141.2
+tune,10,map imagery >= 90% of patch,prior,floor,112,112,0.0,1.0,62.0,119.6,0.036,0.036,0.598,0.598,62.0,134.4
+tune,10,map imagery >= 90% of patch,random,floor,112,112,0.0,1.0,134.4,229.0,0.009,0.009,0.911,0.911,62.0,134.4
+tune,10,map imagery >= 90% of patch,ncc,matcher,112,33,0.705,0.295,23.3,31.4,0.045,0.152,0.0,0.0,62.0,134.4

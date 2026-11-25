@@ -1,0 +1,7 @@
+{
+  "note": "Reference environment of the week 6 fusion runs: the venv ~/venvs/trn (GTSAM is only installed there; system Python has no gtsam). Matcher and calibration runs use eval/reference_env.json (system Python).",
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "gtsam": "4.3.0"
+}

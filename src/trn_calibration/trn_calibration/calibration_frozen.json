@@ -1,0 +1,118 @@
+{
+  "frozen": "2026-11-20, fitted on flight 05 (calibrate) only; before any evaluation on flight 10",
+  "git_commit_at_fit": "b954f63",
+  "wrong_m": 50.0,
+  "data": "eval/results/week5/features_05.csv (frozen matcher, 473 frames)",
+  "note": "errors are against dataset labels: the predicted uncertainty includes label registration error and is not uncertainty about the true position",
+  "selection": {
+    "rule": "lowest CV NLL; eligible = within 1 paired SE of the best (changed from the unpaired SE after the first run, see docs/log.md); then the smallest 05-vs-10 feature shift, fewer features, larger lam; AUC < 0.65 -> constant",
+    "chosen": "M1 ratio",
+    "lam": 1.0,
+    "best_cv": "M3 ratio+gap",
+    "override_note": "",
+    "cv_nll_diff_vs_const": -0.1540582880113321,
+    "cv_nll_diff_ci95": [
+      -0.23819057072247457,
+      -0.0968036117075876
+    ],
+    "n_frames": 473,
+    "n_eff": {
+      "wrong": 99.53833605220248,
+      "nll": 90.04060623243717
+    }
+  },
+  "validity": {
+    "t_strong": null,
+    "t_strong_accepted_frac_05": 0.0,
+    "t_strong_wrong_rate_05": null,
+    "t_publish": 0.3891635043499767,
+    "t_publish_accepted_frac_05": 0.8520084566596194,
+    "t_publish_wrong_rate_05": 0.09925558312655088,
+    "rule": "STRONG: P(wrong) <= t_strong (wrong <= 2% on 05 out-of-fold); UNCERTAIN: <= t_publish (<= 10%); DO_NOT_PUBLISH otherwise or without a candidate"
+  },
+  "models": {
+    "selected": {
+      "name": "M1 ratio",
+      "features": [
+        "log_ratio"
+      ],
+      "mean": [
+        0.5506055179704017
+      ],
+      "std": [
+        0.3466116335909514
+      ],
+      "a0": 3.051283935272839,
+      "a": [
+        0.04874112719909153
+      ],
+      "b0": -3.8868946465422862,
+      "b": [
+        -2.8088027848610406
+      ],
+      "c": 3.70308215489399,
+      "lam": 1.0
+    },
+    "baseline_const": {
+      "name": "M0 const",
+      "features": [],
+      "mean": [],
+      "std": [],
+      "a0": 3.0441347551275477,
+      "a": [],
+      "b0": -1.7643255474483033,
+      "b": [],
+      "c": 3.6254722334493494,
+      "lam": 1.0
+    },
+    "baseline_ratio": {
+      "name": "M1 ratio",
+      "features": [
+        "log_ratio"
+      ],
+      "mean": [
+        0.5506055179704017
+      ],
+      "std": [
+        0.3466116335909514
+      ],
+      "a0": 3.051283935272839,
+      "a": [
+        0.04874112719909153
+      ],
+      "b0": -3.8868946465422862,
+      "b": [
+        -2.8088027848610406
+      ],
+      "c": 3.70308215489399,
+      "lam": 1.0
+    },
+    "alt_robust": {
+      "name": "M2 robust",
+      "features": [
+        "peak_z_norm",
+        "alt_dist_fp"
+      ],
+      "mean": [
+        0.3130182452431289,
+        0.5333811839323465
+      ],
+      "std": [
+        0.13498788037089302,
+        0.3779728490157747
+      ],
+      "a0": 3.0711868159507727,
+      "a": [
+        0.03586419225982456,
+        -0.0036905857125014057
+      ],
+      "b0": -3.5910401274281734,
+      "b": [
+        -2.6539380763349905,
+        -0.005516668592964827
+      ],
+      "c": 3.747899067267361,
+      "lam": 1.0
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "frozen": "2026-11-21, before any fusion result was computed (thresholds written down first, as Akhil asked)",
+  "synthetic_odometry": {
+    "SYNTHETIC": "odometry is generated, not measured: label-path increments plus sampled drift",
+    "model": "floor + random walk (week 2 'floorwalk' form e = sqrt(a^2 + b*delta)); not the power law",
+    "floor_a_m": 0.007194012561262623,
+    "floor_source": "eval/results/vio/drift_params.json floorwalk a (TUM VI indoor VIO)",
+    "random_walk": "per step of length d (m, along the label path): drift += N(0, b*d/2) per horizontal axis",
+    "floor": "each odometry position also carries white N(0, a^2/2) per axis",
+    "drift_levels_pct": [
+      0.1,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "reference_distance_m": 10000.0,
+    "b_rule": "b = (X/100)^2 * D_ref, so the RMS horizontal drift after D_ref = 10 km is X % of 10 km and grows as sqrt(distance): X % * sqrt(D_ref * D)",
+    "b_fitted_tum_vi_m": 0.0001430318557561746,
+    "seeds": 20,
+    "filter_odometry_noise": "matched: per step covariance (b*|u|/2 + a^2) I, with |u| the measured increment length"
+  },
+  "prior": {
+    "sigma_m": 50.0,
+    "source": "loader prior of the first frame (label + N(0, 50 m) per axis, seed 0)"
+  },
+  "fix_model": {
+    "source": "src/trn_calibration/trn_calibration/calibration_frozen.json, role 'selected' (ratio-only mixture)",
+    "factor": "max-mixture: the inlier (sigma(ratio)) or outlier (sigma_out) Gaussian, whichever explains the residual better at each relinearisation, with its weight and normalisation as a constant extra residual"
+  },
+  "thinning": {
+    "interval_s": 9.0,
+    "source": "eval/results/week6/thinning_05.json (flight 05 fix-error autocorrelation, first lag with both axes < 1/e)",
+    "rule": "fuse a candidate only if at least interval_s has passed since the last FUSED fix; candidates rejected by the gate do not reset the timer"
+  },
+  "chi2_gate": {
+    "probability": 0.99,
+    "dof": 2,
+    "threshold": 9.2103,
+    "statistic": "d2 = nu^T (P_pred + sigma_inlier^2 I)^-1 nu, nu = fix - predicted position"
+  },
+  "validity": {
+    "sigma_definition": "s = sqrt(largest eigenvalue of the 2x2 fused position covariance), metres, 1-sigma",
+    "aging_sigma_m": 30.0,
+    "aging_rationale": "1.5 x the fix inlier sigma (~21 m per axis): the belief has grown clearly beyond what one fix gives",
+    "dnp_sigma_m": 100.0,
+    "dnp_rationale": "2 x the initial prior sigma (50 m): worse than knowing nothing but the start prior",
+    "strong_fix_max_p_wrong": 0.15,
+    "cuts_source": "src/trn_calibration/trn_calibration/validity_cuts.json",
+    "rules": [
+      "DO_NOT_PUBLISH if no fix has been fused yet or s > dnp_sigma_m",
+      "AGING if s > aging_sigma_m",
+      "UNCERTAIN if the last fused fix had P(wrong) > strong_fix_max_p_wrong",
+      "STRONG otherwise"
+    ]
+  },
+  "no_bias_state": "no bias/offset state is estimated (Akhil's rule); no lag correction, no rotation prior",
+  "evaluation": {
+    "develop_on": "10 (tune)",
+    "check_on": "05 (calibrate)",
+    "never": "11 (test)",
+    "note": "errors are against dataset labels and include label registration error"
+  }
+}

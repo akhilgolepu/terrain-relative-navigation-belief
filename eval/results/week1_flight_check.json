@@ -1,0 +1,56 @@
+{
+  "bag": "/home/akhil/data/bags/week1_flight",
+  "frame": "PX4 local NED, origin = EKF reference point (home); altitude = -z",
+  "bag_duration_s": 113.1,
+  "armed_transitions_s": [
+    [
+      0.14,
+      true
+    ],
+    [
+      107.72,
+      false
+    ]
+  ],
+  "landed_transitions_s": [
+    [
+      0.66,
+      true
+    ],
+    [
+      1.88,
+      false
+    ],
+    [
+      105.71,
+      true
+    ]
+  ],
+  "nav_mode_sequence": [
+    [
+      0.14,
+      "AUTO_LOITER"
+    ],
+    [
+      0.34,
+      "AUTO_MISSION"
+    ],
+    [
+      80.31,
+      "AUTO_LOITER"
+    ],
+    [
+      80.32,
+      "AUTO_RTL"
+    ],
+    [
+      107.72,
+      "AUTO_LOITER"
+    ]
+  ],
+  "airborne_s": 103.83,
+  "max_altitude_m": 20.09,
+  "max_horizontal_distance_m": 109.72,
+  "final_horizontal_distance_m": 0.04,
+  "ended_landed_and_disarmed": true
+}

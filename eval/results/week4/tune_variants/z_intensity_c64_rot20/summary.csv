@@ -1,0 +1,4 @@
+split,flight,method,role,n_frames,n_fix,no_fix_rate,median_m,p95_m,within_15m_rate,wrong_over_50m_rate,floor_prior_median_m,floor_random_median_m
+tune,10,prior,floor,144,144,0.0,62.0,116.6,0.028,0.625,62.0,134.4
+tune,10,random,floor,144,144,0.0,134.4,231.3,0.007,0.917,62.0,134.4
+tune,10,ncc,matcher,144,141,0.021,30.7,181.7,0.111,0.403,62.0,134.4

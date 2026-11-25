@@ -1,0 +1,41 @@
+# colcon build output
+build/
+install/
+log/
+
+# Data never goes in git (see data/README.md); datasets live in ~/data
+data/*
+!data/README.md
+*.bag
+*.db3
+*.mcap
+
+# VIO run outputs: keep CSVs, plots, settings JSON and TUM trajectories; not the recorded pose bags or run logs
+eval/results/**/*_poseimu_bag/
+eval/results/**/*.log
+eval/results/**/*.pid
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Windows download markers
+*:Zone.Identifier
+eval/results/vio/skip_start_0/*.png
+
+# Week 3: UAV-VisLoc is academic use only, no redistribution. Overlays, sample images and map chips stay out of git.
+eval/results/week3/overlays/
+eval/results/week3/samples/
+eval/results/**/*.jpg
+eval/results/**/*.jpeg
+eval/results/**/*.JPG
+
+# week 4 failure overlays contain dataset imagery (academic use, no redistribution)
+eval/results/week4/**/failures/*.png
+
+# closed-loop matcher caches hold label-derived positions (UAV-VisLoc: no redistribution)
+eval/results/week7/closed_loop/runs/*.cache.jsonl
+
+# flight 11 test: label-derived positions and matcher caches stay private (UAV-VisLoc: no redistribution)
+eval/results/test_flight11/private/

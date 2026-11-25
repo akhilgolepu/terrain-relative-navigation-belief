@@ -1,0 +1,8 @@
+flight 10 (tune): 44 accepted fixes with |e| <= 50 m, directions {'90-180': 20, '270-360': 24}
+  RMS error 24.3 m = systematic per-direction offset 21.1 m (75% of mean square) + within-direction scatter 12.1 m (25%); scatter per axis 8.6 m
+  median |e| 23.2 m; median |e - direction mean| 8.8 m (matcher error + random label noise: an upper bound on the matcher's own error)
+flight 05 (calibrate): 324 accepted fixes with |e| <= 50 m, directions {'0-90': 88, '90-180': 80, '270-360': 82, '180-270': 74}
+  RMS error 27.3 m = systematic per-direction offset 9.0 m (11% of mean square) + within-direction scatter 25.8 m (89%); scatter per axis 18.2 m
+  median |e| 24.5 m; median |e - direction mean| 20.8 m (matcher error + random label noise: an upper bound on the matcher's own error)
+diagnostic only; errors are against dataset labels
+wrote /home/akhil/trn-belief/eval/results/week5/error_budget.csv

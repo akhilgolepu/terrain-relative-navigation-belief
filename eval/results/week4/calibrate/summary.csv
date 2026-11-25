@@ -1,0 +1,10 @@
+split,flight,subset,method,role,n_frames,n_fix,no_fix_rate,acceptance,median_m,p95_m,within_15m_rate,within_15m_of_fixes,wrong_over_50m_rate,wrong_over_50m_of_fixes,floor_prior_median_m,floor_random_median_m
+calibrate,05,all frames,prior,floor,473,473,0.0,1.0,55.8,125.2,0.032,0.032,0.581,0.581,55.8,125.4
+calibrate,05,all frames,random,floor,473,473,0.0,1.0,125.4,231.2,0.008,0.008,0.909,0.909,55.8,125.4
+calibrate,05,all frames,ncc,matcher,473,354,0.252,0.748,25.4,58.3,0.14,0.186,0.063,0.085,55.8,125.4
+calibrate,05,map imagery < 90% of patch,prior,floor,180,180,0.0,1.0,55.4,121.0,0.05,0.05,0.583,0.583,55.4,124.8
+calibrate,05,map imagery < 90% of patch,random,floor,180,180,0.0,1.0,124.8,237.9,0.011,0.011,0.906,0.906,55.4,124.8
+calibrate,05,map imagery < 90% of patch,ncc,matcher,180,135,0.25,0.75,22.0,50.4,0.178,0.237,0.05,0.067,55.4,124.8
+calibrate,05,map imagery >= 90% of patch,prior,floor,293,293,0.0,1.0,57.3,126.4,0.02,0.02,0.58,0.58,57.3,126.1
+calibrate,05,map imagery >= 90% of patch,random,floor,293,293,0.0,1.0,126.1,222.4,0.007,0.007,0.911,0.911,57.3,126.1
+calibrate,05,map imagery >= 90% of patch,ncc,matcher,293,219,0.253,0.747,27.9,59.1,0.116,0.155,0.072,0.096,57.3,126.1

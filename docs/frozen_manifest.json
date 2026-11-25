@@ -1,0 +1,31 @@
+{
+ "note": "SHA-256 of the frozen files for the single flight 11 test run; checked by eval/run_test.py",
+ "files": {
+  "eval/splits.json": "2166939a20745d382466a6b0a82d8ad1dc3b2b41f17c5dcfcdf3d1c8da2e0953",
+  "src/trn_matcher/trn_matcher/geo.py": "0eba53287b5bc12b886594f71c0ce3a573044724ccbbf2f8ee55bad92af396d1",
+  "src/trn_matcher/trn_matcher/tile_store.py": "cf00d49e59291d52b029c9269f619693d2561ea860c85947224c8395a3b19c4b",
+  "src/trn_matcher/trn_matcher/loader.py": "9659961c9f2eec4b7205214641e52307ec3c4b051fd7eea81dfc81538f3ccc06",
+  "src/trn_matcher/trn_matcher/frames.py": "4d74b020b2b4ea43bd8bfa92b6916adf28e4d3e477ab970bdcb8e4ccbf450906",
+  "src/trn_matcher/trn_matcher/interface.py": "b12e96e25d2f9d7c37e552a4e6471b2642d24af159f3a6fcfa3bb9a2170597ed",
+  "src/trn_matcher/trn_matcher/features.py": "a8f796fbbe63ccf5bc76ee3d7ac4bd64376587e3251301743d0053f1eba95da6",
+  "src/trn_matcher/trn_matcher/masked_ncc.py": "9b41b70f7b549ed07ef3fdd6a418966a6ae16a5dd0141be1ce6e4965e585dfe9",
+  "src/trn_matcher/trn_matcher/matcher.py": "cb93765ebdc36d8dad3fd1c09610d8cfedd5bc00ddec68fbec75d28a60ac1644",
+  "src/trn_matcher/trn_matcher/matcher_frozen.json": "1c111bbd5daf24886462cc954c58bec965da62cdacc725e981a69e869fdc6e04",
+  "src/trn_calibration/trn_calibration/covariance.py": "662fc556623e677007c4644d317906c0290ac9f5748c73d53cccdd82a5ca763b",
+  "src/trn_calibration/trn_calibration/calibration_frozen.json": "8cec275eef53b0ee792f3a264688f4c3a84a14cc4d2e84989e620e8044f49f03",
+  "src/trn_calibration/trn_calibration/validity_cuts.json": "625cf007cd5497b02f6920af37d82e0bd9a6aa8f3c8798f07d8a2f36c4a42857",
+  "src/trn_fusion/trn_fusion/config.py": "4dfde52a4644614e6d9fdd3aab8462a987ebf11698336876e9c419be2bea47e2",
+  "src/trn_fusion/trn_fusion/core.py": "62f5b87d745cf61eaab342f77adfecbe646e581117b4432d013f45bd1a17fba8",
+  "src/trn_fusion/trn_fusion/fix_factor.py": "4dd9812a447e1f7522566670a21a251173ebcda5674024d0ed70fafb333573a1",
+  "src/trn_fusion/trn_fusion/odometry_sim.py": "6f23bbbc6dd0f0d48a9b45861915d24c2a831c7187b8cc91a427492f4946acee",
+  "src/trn_fusion/trn_fusion/validity.py": "9c88a9f8c904b2689f89e89b3e4bd110b238b532cc42f2e7e544a39a95849747",
+  "src/trn_fusion/trn_fusion/fusion_frozen.json": "b7b7af943e0957af5286e8f53e319425966e4a78c9c9e73f028ee32e3176f0d0",
+  "src/trn_consumer/trn_consumer/policy.py": "7f4f0bea4b4598cd306638242a525f52efcd9ff1a8428ec3a8d322b144e36acb",
+  "eval/reference_env.json": "8420af9dd6fe7039c22fd545b20446ac375ec7e2b92fd92d344bcf358fd37510",
+  "eval/reference_env_fusion.json": "038668b5120ca234830414a1f24e5a68218894d54f270ce2f0aa1b11ee0c2110",
+  "eval/envcheck.py": "29f36cb76f79436b1572724f40822d2fbc449a0d9b17c0b2f1963d225b733914",
+  "eval/calib_metrics.py": "805215bd7b6692f2d66fbc20d3be8988286d4153a242b3f0c294c7c8b0e56cd2",
+  "eval/eval_fusion.py": "db9a56e91435b611bafeedc4cf0e4b82f603b56dff914d882a00de89f8ad7cf7",
+  "docs/test_preregistration.md": "e1890339434de94f81e8080601c75d93e5e5b780d46e458ecc60d6acd9353fca"
+ }
+}

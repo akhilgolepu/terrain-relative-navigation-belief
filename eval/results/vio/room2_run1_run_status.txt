@@ -1,0 +1,14 @@
+dataset=tum_vi
+sequence=room2_run1
+bag=/home/akhil/data/tumvi/dataset-room2_512_16_ros2
+bag_duration_s=144.107376
+play_limit_s=175
+play_wall_s=144.7
+play_exit_code=0
+play_end=exited by itself
+recorder_end=exited after SIGINT
+openvins_end=exited after SIGINT
+leftover_openvins_processes=0
+pose_bag_messages=2778
+valid=yes
+reason=

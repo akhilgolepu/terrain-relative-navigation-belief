@@ -1,0 +1,7 @@
+{
+  "note": "Library versions of the reported week 4/5 runs (manifests of eval/results/week4/calibrate and tune_regression; the frozen tune run of 2026-11-19 used the same system Python). Results differ slightly under other versions (week 4 follow-up log).",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "opencv": "4.6.0",
+  "scipy": "1.11.4"
+}

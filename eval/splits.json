@@ -1,0 +1,61 @@
+{
+  "dataset": "UAV-VisLoc, Zenodo record 19603534 (academic use only, no redistribution)",
+  "rule": "whole regions per split; every flight in exactly one region; no flight in two splits",
+  "frames": "positions in metres, east/north in each region's local ENU frame tangent to WGS84 at enu_origin (degrees, WGS84)",
+  "purpose": {
+    "tune": "tune the week 4 matcher",
+    "calibrate": "fit the week 5 calibration",
+    "test": "final test only; do not look at it while tuning or calibrating"
+  },
+  "regions": {
+    "hebei_huailai": {
+      "flights": [
+        "10"
+      ],
+      "terrain": "plains / farmland",
+      "modality": "RGB",
+      "place": "Huailai-Yanqing area north-west of Beijing, China"
+    },
+    "yunnan": {
+      "flights": [
+        "05"
+      ],
+      "terrain": "mountainous plateau",
+      "modality": "RGB",
+      "place": "central Yunnan, China"
+    },
+    "gansu": {
+      "flights": [
+        "11"
+      ],
+      "terrain": "arid",
+      "modality": "RGB",
+      "place": "Zhangye area, Gansu, China"
+    }
+  },
+  "splits": {
+    "tune": [
+      "hebei_huailai"
+    ],
+    "calibrate": [
+      "yunnan"
+    ],
+    "test": [
+      "gansu"
+    ]
+  },
+  "excluded_regions": {
+    "jiangsu_wuxi": {
+      "flights": [
+        "18",
+        "19",
+        "20"
+      ],
+      "modality": "thermal infrared",
+      "place": "Jiangyin-Wuxi area, Jiangsu, China",
+      "status": "excluded from tune/calibrate/test, reserved as a cross-modal stress test",
+      "note": "modality found from the overlays (2026-11-18); the dataset metadata does not say it"
+    }
+  },
+  "note": "public copy: coordinates removed (enu_origin, chip_centre_bbox). Regenerate the full file with `python3 eval/make_splits.py` after downloading UAV-VisLoc; the loader needs enu_origin."
+}

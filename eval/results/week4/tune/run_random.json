@@ -1,0 +1,29 @@
+{
+  "command": "eval/eval_matcher.py --split tune --matcher trn_matcher.matcher:FeatureMatcher",
+  "git_commit": "39477e9",
+  "date": "2026-11-19T21:38:57",
+  "split": "tune",
+  "flights": [
+    "10"
+  ],
+  "n_frames": 144,
+  "every": 1,
+  "seed": 0,
+  "prior_sigma_m": 50.0,
+  "image_px": 1024,
+  "map_m_per_px": 0.5,
+  "search": {
+    "window_m": 150.0,
+    "scale_range": [
+      0.8,
+      1.3
+    ],
+    "rot_range_deg": [
+      -20.0,
+      20.0
+    ]
+  },
+  "labels": "dataset UAV-coordinates.csv positions; label registration error ~10-40 m (week 3)",
+  "method": "random",
+  "settings": {}
+}

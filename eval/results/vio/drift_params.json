@@ -1,0 +1,245 @@
+{
+  "chosen_model": "power",
+  "reason": "The power law is kept because no other model is clearly better (n = 20 for all): threeterm: AICc difference -4.6 (power minus threeterm; needs > 2), held-out RMS log residual 0.220 vs 0.207 power; floorwalk: AICc difference -1.8 (power minus floorwalk; needs > 2), held-out RMS log residual 0.220 vs 0.207 power.",
+  "note": "The power law describes this indoor data (RPE RMSE vs segment length on TUM VI room1/room2). It is not the drift generator for week 6 synthetic odometry; that generator is a separate decision.",
+  "models": {
+    "power": {
+      "formula": "e = c * delta^p",
+      "parameters": {
+        "c": 0.014012108764716908,
+        "p": 0.4213705683511837
+      },
+      "std_errors": {
+        "c": 0.0005648203625706804,
+        "p": 0.04031898100314976
+      },
+      "units": {
+        "c": "m^(1-p)",
+        "p": "dimensionless"
+      },
+      "parameters_at_bound": [],
+      "n_points": 20,
+      "chi2_weighted": 38.53726047985683,
+      "aicc": 17.82374844074831,
+      "aicc_minus_power": 0.0,
+      "rms_log_residual": 0.14442371989279962,
+      "leave_one_sequence_out_rms_log_residual": {
+        "held_out_room1": 0.17680223949489693,
+        "held_out_room2": 0.23243821199020584,
+        "pooled": 0.20650248701119164
+      }
+    },
+    "threeterm": {
+      "formula": "e = sqrt(a^2 + b * delta + (c * delta)^2)",
+      "parameters": {
+        "a": 0.007193986823486061,
+        "b": 0.00014303210314432101,
+        "c": 3.5674313690403138e-12
+      },
+      "std_errors": {
+        "a": 0.003565895848895689,
+        "b": 4.660456269532122e-05,
+        "c": 279.2047690434437
+      },
+      "units": {
+        "a": "m",
+        "b": "m (b * delta in m^2)",
+        "c": "dimensionless (m per m)"
+      },
+      "parameters_at_bound": [
+        "c"
+      ],
+      "n_points": 20,
+      "chi2_weighted": 42.266510127233715,
+      "aicc": 22.46525552319644,
+      "aicc_minus_power": 4.641507082448129,
+      "rms_log_residual": 0.16114273551702468,
+      "leave_one_sequence_out_rms_log_residual": {
+        "held_out_room1": 0.19759773052916182,
+        "held_out_room2": 0.24004239519278703,
+        "pooled": 0.21984678141852043
+      }
+    },
+    "floorwalk": {
+      "formula": "e = sqrt(a^2 + b * delta)",
+      "parameters": {
+        "a": 0.007194012561262623,
+        "b": 0.0001430318557561746
+      },
+      "std_errors": {
+        "a": 0.0022732572643254043,
+        "b": 2.3883413260889764e-05
+      },
+      "units": {
+        "a": "m",
+        "b": "m (b * delta in m^2)"
+      },
+      "parameters_at_bound": [],
+      "n_points": 20,
+      "chi2_weighted": 42.26651012701627,
+      "aicc": 19.671137876034727,
+      "aicc_minus_power": 1.8473894352864164,
+      "rms_log_residual": 0.16114257817872304,
+      "leave_one_sequence_out_rms_log_residual": {
+        "held_out_room1": 0.197598138755313,
+        "held_out_room2": 0.24004239242860737,
+        "pooled": 0.21984696336589854
+      }
+    }
+  },
+  "quantity": "translation RPE RMSE [m] over segments of delta metres",
+  "units": {
+    "delta": "m, path length along the ESTIMATE's path (evo pairs_from_reference=False)",
+    "e": "m, RMSE of translation RPE over all non-overlapping segments of that length"
+  },
+  "method": {
+    "fit": "scipy.optimize.curve_fit on e (not log e), bounds: all parameters >= 0, power p <= 2",
+    "weights": "sigma = e / sqrt(2 n_segments), relative (absolute_sigma=False)",
+    "pooling": "all distinct runs and sequences pooled, one point per run and segment length",
+    "comparison": "weighted chi2, AICc, RMS log residual, leave-one-sequence-out RMS log residual",
+    "selection": "power unless another model has AICc lower by > 2 (same n) and a lower held-out residual; if several, the lowest AICc"
+  },
+  "fitted_range": {
+    "delta_min_m": 1.0,
+    "delta_max_m": 20.0,
+    "max_delta_m": 20.0,
+    "n_points": 20,
+    "segment_lengths_m": [
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      20.0
+    ]
+  },
+  "runs": [
+    "room1_run1",
+    "room1_run2",
+    "room2_run1",
+    "room2_run2"
+  ],
+  "inputs": {
+    "room1_run1": {
+      "file": "eval/results/vio/room1_run1_rpe_vs_delta.csv",
+      "sha256": "a426d29c58d3ca851f05f04b895f386cca3f5b963c148c40cbe297fce31803d7"
+    },
+    "room1_run2": {
+      "file": "eval/results/vio/room1_run2_rpe_vs_delta.csv",
+      "sha256": "acd1aadc16f10e9885e387842295225d392ad484327c16283669ba5e6885ec9e"
+    },
+    "room2_run1": {
+      "file": "eval/results/vio/room2_run1_rpe_vs_delta.csv",
+      "sha256": "77c0d5f28a43b5b786ecf6a3129b6db7b4cff579bf3715ddcd435747625f907c"
+    },
+    "room2_run2": {
+      "file": "eval/results/vio/room2_run2_rpe_vs_delta.csv",
+      "sha256": "c1226f87cbe40737ed00f260b5a932f63997d55115f03bcfca0c2add2e3c1223"
+    }
+  },
+  "scoring_settings": {
+    "drift_curve_alignment": {
+      "method": "4dof_yaw_translation",
+      "window_m": 5.0,
+      "skip_start_s": 2.0,
+      "skip_start_meaning": "alignment window starts at the first matched pose at or after the first estimated pose + skip_start_s; error rows still cover all poses, distance from the first matched pose",
+      "window_unit": "metres travelled along ground truth",
+      "error_split": "horizontal = norm of (x,y) error; vertical = signed z error (est - gt)",
+      "comparison_curves": "horizontal error with SE(3) alignment over all poses (cross-check), and with 4-DoF over all poses",
+      "tilt_check": "roll/pitch (ZYX Euler, degrees) of the SE(3) rotation applied to the estimate",
+      "assumption": "z axis along gravity in estimate and ground truth"
+    },
+    "rpe_skip_start_s": 2.0,
+    "rpe_segments": "evo RPE translation_part, consecutive non-overlapping segments, length measured along the estimate's path (pairs_from_reference=False), after SE(3) alignment",
+    "alignment_ate_rpe": "SE(3) Umeyama, all matched poses, no scale",
+    "max_time_diff_s": 0.01
+  },
+  "scope": "TUM VI room1/room2 (indoor, small loops, < 150 m per sequence), OpenVINS shipped tum_vi config, public data replayed at 1x; not flight data. Extrapolation beyond the fitted range is untested.",
+  "sensitivity_power": [
+    {
+      "variant": "baseline (segment weights, all runs)",
+      "weights": "segments",
+      "runs": [
+        "room1_run1",
+        "room1_run2",
+        "room2_run1",
+        "room2_run2"
+      ],
+      "n_points": 20,
+      "c": 0.014012108764716908,
+      "c_std_error": 0.0005648203625706804,
+      "p": 0.4213705683511837,
+      "p_std_error": 0.04031898100314976
+    },
+    {
+      "variant": "equal weights per point",
+      "weights": "equal",
+      "runs": [
+        "room1_run1",
+        "room1_run2",
+        "room2_run1",
+        "room2_run2"
+      ],
+      "n_points": 20,
+      "c": 0.015103039729146653,
+      "c_std_error": 0.0012549882743427636,
+      "p": 0.3849910788088976,
+      "p_std_error": 0.03410805384934522
+    },
+    {
+      "variant": "without room1_run1",
+      "weights": "segments",
+      "runs": [
+        "room1_run2",
+        "room2_run1",
+        "room2_run2"
+      ],
+      "n_points": 15,
+      "c": 0.01492379506009391,
+      "c_std_error": 0.0006718780782557212,
+      "p": 0.4028912992141222,
+      "p_std_error": 0.044798436612410945
+    },
+    {
+      "variant": "without room1_run2",
+      "weights": "segments",
+      "runs": [
+        "room1_run1",
+        "room2_run1",
+        "room2_run2"
+      ],
+      "n_points": 15,
+      "c": 0.01425240599138039,
+      "c_std_error": 0.0007570419387972387,
+      "p": 0.42403133709941265,
+      "p_std_error": 0.052721397098603295
+    },
+    {
+      "variant": "without room2_run1",
+      "weights": "segments",
+      "runs": [
+        "room1_run1",
+        "room1_run2",
+        "room2_run2"
+      ],
+      "n_points": 15,
+      "c": 0.0134612138262403,
+      "c_std_error": 0.0005294395093455479,
+      "p": 0.4264607866154791,
+      "p_std_error": 0.0394367184395327
+    },
+    {
+      "variant": "without room2_run2",
+      "weights": "segments",
+      "runs": [
+        "room1_run1",
+        "room1_run2",
+        "room2_run1"
+      ],
+      "n_points": 15,
+      "c": 0.013611688845357068,
+      "c_std_error": 0.0006090533309101028,
+      "p": 0.4298775777611668,
+      "p_std_error": 0.0451898093862304
+    }
+  ]
+}
